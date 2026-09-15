@@ -6,7 +6,7 @@ A lot of charts use colour as the main way to separate different lines, bars, or
 
 ColorKey keeps the original colours, but adds **extra visual cues such as different line styles and patterns** so the chart does not depend on colour alone.
 
-Built for **GatewayHacks 2026 — Accessibility & Health**.
+Built for **GatewayHacks 2026 Track 1 — Accessibility & Health**.
 
 ## Why I Made It
 

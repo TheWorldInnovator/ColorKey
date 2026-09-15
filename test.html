@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ColorKey Realistic Chart Test</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        svg {
+            border: 1px solid #ccc;
+        }
+
+        .axis-label {
+            font-size: 14px;
+        }
+
+        .legend-text {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ColorKey Realistic SVG Test</h1>
+
+    <h2>Monthly Website Traffic</h2>
+
+    <svg width="650" height="420">
+
+        <!-- Plot background -->
+        <rect
+            x="70"
+            y="30"
+            width="500"
+            height="280"
+            fill="white">
+        </rect>
+
+
+        <!-- ========================= -->
+        <!-- GRIDLINES -->
+        <!-- ========================= -->
+
+        <path
+            d="M70 80 L570 80"
+            stroke="lightgray"
+            stroke-width="1">
+        </path>
+
+        <path
+            d="M70 130 L570 130"
+            stroke="lightgray"
+            stroke-width="1">
+        </path>
+
+        <path
+            d="M70 180 L570 180"
+            stroke="lightgray"
+            stroke-width="1">
+        </path>
+
+        <path
+            d="M70 230 L570 230"
+            stroke="lightgray"
+            stroke-width="1">
+        </path>
+
+        <path
+            d="M70 280 L570 280"
+            stroke="lightgray"
+            stroke-width="1">
+        </path>
+
+
+        <!-- ========================= -->
+        <!-- AXES -->
+        <!-- ========================= -->
+
+        <path
+            d="M70 30 L70 310"
+            stroke="black"
+            stroke-width="2">
+        </path>
+
+        <path
+            d="M70 310 L570 310"
+            stroke="black"
+            stroke-width="2">
+        </path>
+
+
+        <!-- ========================= -->
+        <!-- DATA SERIES -->
+        <!-- ========================= -->
+
+        <!-- Desktop -->
+        <path
+            d="M90 250
+               L180 210
+               L270 220
+               L360 150
+               L450 120
+               L540 90"
+            fill="none"
+            stroke="red"
+            stroke-width="5">
+        </path>
+
+
+        <!-- Mobile -->
+        <path
+            d="M90 270
+               L180 240
+               L270 190
+               L360 200
+               L450 150
+               L540 130"
+            fill="none"
+            stroke="green"
+            stroke-width="5">
+        </path>
+
+
+        <!-- Tablet -->
+        <path
+            d="M90 290
+               L180 260
+               L270 250
+               L360 230
+               L450 190
+               L540 170"
+            fill="none"
+            stroke="blue"
+            stroke-width="5">
+        </path>
+
+
+        <!-- ========================= -->
+        <!-- X AXIS LABELS -->
+        <!-- ========================= -->
+
+        <text x="85" y="335" class="axis-label">Jan</text>
+        <text x="175" y="335" class="axis-label">Feb</text>
+        <text x="265" y="335" class="axis-label">Mar</text>
+        <text x="355" y="335" class="axis-label">Apr</text>
+        <text x="445" y="335" class="axis-label">May</text>
+        <text x="535" y="335" class="axis-label">Jun</text>
+
+
+        <!-- ========================= -->
+        <!-- LEGEND -->
+        <!-- ========================= -->
+
+        <rect
+            x="110"
+            y="365"
+            width="20"
+            height="20"
+            fill="red">
+        </rect>
+
+        <text
+            x="140"
+            y="380"
+            class="legend-text">
+            Desktop
+        </text>
+
+
+        <rect
+            x="250"
+            y="365"
+            width="20"
+            height="20"
+            fill="green">
+        </rect>
+
+        <text
+            x="280"
+            y="380"
+            class="legend-text">
+            Mobile
+        </text>
+
+
+        <rect
+            x="380"
+            y="365"
+            width="20"
+            height="20"
+            fill="blue">
+        </rect>
+
+        <text
+            x="410"
+            y="380"
+            class="legend-text">
+            Tablet
+        </text>
+
+    </svg>
+
+    <hr style="margin: 50px 0;">
+
+<h2>Quarterly Sales</h2>
+
+<svg width="650" height="420">
+
+    <!-- Background -->
+    <rect
+        x="70"
+        y="30"
+        width="500"
+        height="280"
+        fill="white">
+    </rect>
+
+
+    <!-- Gridlines -->
+    <path
+        d="M70 80 L570 80"
+        stroke="lightgray"
+        stroke-width="1">
+    </path>
+
+    <path
+        d="M70 130 L570 130"
+        stroke="lightgray"
+        stroke-width="1">
+    </path>
+
+    <path
+        d="M70 180 L570 180"
+        stroke="lightgray"
+        stroke-width="1">
+    </path>
+
+    <path
+        d="M70 230 L570 230"
+        stroke="lightgray"
+        stroke-width="1">
+    </path>
+
+    <path
+        d="M70 280 L570 280"
+        stroke="lightgray"
+        stroke-width="1">
+    </path>
+
+
+    <!-- Axes -->
+    <path
+        d="M70 30 L70 310"
+        stroke="black"
+        stroke-width="2">
+    </path>
+
+    <path
+        d="M70 310 L570 310"
+        stroke="black"
+        stroke-width="2">
+    </path>
+
+
+    <!-- Bars -->
+
+    <rect
+        x="110"
+        y="150"
+        width="70"
+        height="160"
+        fill="red">
+    </rect>
+
+    <rect
+        x="220"
+        y="100"
+        width="70"
+        height="210"
+        fill="green">
+    </rect>
+
+    <rect
+        x="330"
+        y="190"
+        width="70"
+        height="120"
+        fill="blue">
+    </rect>
+
+    <rect
+        x="440"
+        y="70"
+        width="70"
+        height="240"
+        fill="orange">
+    </rect>
+
+
+    <!-- X-axis labels -->
+
+    <text x="130" y="335" class="axis-label">Q1</text>
+    <text x="240" y="335" class="axis-label">Q2</text>
+    <text x="350" y="335" class="axis-label">Q3</text>
+    <text x="460" y="335" class="axis-label">Q4</text>
+
+
+    <!-- Legend -->
+
+    <rect
+        x="90"
+        y="365"
+        width="20"
+        height="20"
+        fill="red">
+    </rect>
+
+    <text
+        x="118"
+        y="380"
+        class="legend-text">
+        Product A
+    </text>
+
+
+    <rect
+        x="220"
+        y="365"
+        width="20"
+        height="20"
+        fill="green">
+    </rect>
+
+    <text
+        x="248"
+        y="380"
+        class="legend-text">
+        Product B
+    </text>
+
+
+    <rect
+        x="350"
+        y="365"
+        width="20"
+        height="20"
+        fill="blue">
+    </rect>
+
+    <text
+        x="378"
+        y="380"
+        class="legend-text">
+        Product C
+    </text>
+
+
+    <rect
+        x="480"
+        y="365"
+        width="20"
+        height="20"
+        fill="orange">
+    </rect>
+
+    <text
+        x="508"
+        y="380"
+        class="legend-text">
+        Product D
+    </text>
+
+</svg>
+
+</body>
+
+</html>

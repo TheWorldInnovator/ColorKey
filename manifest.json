@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "ColorKey",
+  "version": "0.1.0",
+  "description": "Makes SVG charts more accessible by adding non-color cues such as line styles and fill patterns.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
